@@ -1,0 +1,186 @@
+<html>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.css"
+    rel="stylesheet"
+  />
+  <style>
+    .inputContainer{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-self: center;
+      padding: 50px;
+      margin-left: 60px;
+    }
+
+    .submitBtn{
+      background-color: rgb(104, 192, 104);
+      color: white;
+      margin-right: 70px;
+    }
+
+    h1{
+      color: rgb(104, 192, 104);
+    }
+  </style>
+  <body bgcolor="#d4a3ae">
+    <center>
+      <h1>Crop Recommendation</h1>
+      <p>Get the best Recommendation for crop to grow using our ML alogrithm</p>
+      <br />
+
+      <form method="POST" , action="{{url_for('home')}}">
+        <!-- <b>
+          <div class="form-outline">
+            <input type="text" id="typeText" name="a" class="form-control" />
+            <label class="form-label" for="typeText">Nitrogen</label>
+          </div>
+          
+          <br /><br />
+          <div class="form-outline">
+            <input type="text" id="typeText" name="b" class="form-control" />
+            <label class="form-label" for="typeText">Phosphorous</label>
+          </div>
+         
+          <br /><br />
+        
+          <div class="form-outline">
+            <input type="text" id="typeText" name="c" class="form-control" />
+            <label class="form-label" for="typeText">Potassium</label>
+          </div>
+          <br /><br />
+     
+          <div class="form-outline">
+            <input type="text" id="typeText" name="d" class="form-control" />
+            <label class="form-label" for="typeText">Temperature</label>
+          </div>
+          <br /><br />
+          
+          <div class="form-outline">
+            <input type="text" id="typeText" name="e" class="form-control" />
+            <label class="form-label" for="typeText">Humidity</label>
+          </div>
+           <br /><br />
+   
+          <div class="form-outline">
+            <input type="text" id="typeText" name="f" class="form-control" />
+            <label class="form-label" for="typeText">PH Value</label>
+          </div>
+          <br /><br />
+      
+          <div class="form-outline">
+            <input type="text" id="typeText" name="g" class="form-control" />
+            <label class="form-label" for="typeText">Rainfall</label>
+          </div>
+           <br /><br />
+          <br
+        /></b> -->
+
+        <div class="cropImg">
+          <img src="crop.png" alt="">
+        </div>
+
+        <div class="inputContainer">
+          <div class="row">
+            <div class="col-5 m-2">
+              <div class="form-outline">
+                <input
+                  type="text"
+                  id="typeText"
+                  name="a"
+                  class="form-control"
+                />
+                <label class="form-label" for="typeText">Nitrogen</label>
+              </div>
+            </div>
+            <div class="col-5 m-2">
+              <div class="form-outline">
+                <input
+                  type="text"
+                  id="typeText"
+                  name="b"
+                  class="form-control"
+                />
+                <label class="form-label" for="typeText">Phosphorous</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-5 m-2">
+              <div class="form-outline">
+                <input
+                  type="text"
+                  id="typeText"
+                  name="c"
+                  class="form-control"
+                />
+                <label class="form-label" for="typeText">Potassium</label>
+              </div>
+            </div>
+            <div class="col-5 m-2">
+              <div class="form-outline">
+                <input
+                  type="text"
+                  id="typeText"
+                  name="d"
+                  class="form-control"
+                />
+                <label class="form-label" for="typeText">Temperature</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-5 m-2">
+              <div class="form-outline">
+                <input
+                  type="text"
+                  id="typeText"
+                  name="e"
+                  class="form-control"
+                />
+                <label class="form-label" for="typeText">Humidity</label>
+              </div>
+            </div>
+            <div class="col-5 m-2">
+              <div class="form-outline">
+                <input
+                  type="text"
+                  id="typeText"
+                  name="f"
+                  class="form-control"
+                />
+                <label class="form-label" for="typeText">PH Value</label>
+              </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-5 m-2">
+              <div class="form-outline">
+                <input
+                  type="text"
+                  id="typeText"
+                  name="g"
+                  class="form-control"
+                />
+                <label class="form-label" for="typeText">Rainfall</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button type="submit" , value="predict!" class="btn  submitBtn">Submit</button>
+        <!-- <input type="submit" , value="predict!" />   -->
+      </form>
+
+      <!-- <img src="static\flower1.jpg" alt="flower" /> -->
+    </center>
+    <!-- MDB -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.0.0/mdb.min.js"
+    ></script>
+  </body>
+</html>
